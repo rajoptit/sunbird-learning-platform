@@ -50,7 +50,7 @@ middleware_user_activity_agg_table: "user_activity_agg"
 activity_agg_checkpointing_interval: 30000
 activity_agg_checkpointing_pause_interval: 30000
 activity_agg_batch_interval: 60
-activity_agg_batch_read_size: 1000
+activity_agg_batch_read_size: 100
 activity_agg_batch_write_size: 10
 
 ### UserCacheUpdater Job related Vars
