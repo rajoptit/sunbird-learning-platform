@@ -28,9 +28,6 @@
   debug:
     var: var1.stdout
 
-- name: Ensure azure blob storage container exists
-  command: az storage container create  --name {{ neo4j_backup_azure_container_name }}
-  ignore_errors: true
 
   #environment:
   #  AZURE_STORAGE_ACCOUNT: "{{ backup_azure_storage_account_name }}"
