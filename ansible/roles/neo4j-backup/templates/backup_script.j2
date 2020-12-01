@@ -1,6 +1,7 @@
 #!/bin/sh
 cd {{neo4j_home}}
-bin/neo4j-backup --from={{backup_add}} --to=/home/learning/{{graph_machine}}
+bin/neo4j-admin dump --database graph.db --to=/home/learning/{{graph_machine}}
+#bin/neo4j-backup --from={{backup_add}} --to=/home/learning/{{graph_machine}}
 time="$(date '+%e%b%Y')"
 var="{{graph_machine}}"
 var1="_"
